@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Equations Solver</title>
+</head>
+<body>
+    <h1>Linear Equations Solver</h1>
+    <form method="POST">
+        <label for="equation">Enter coefficients (comma separated):</label><br>
+        <input type="text" name="equation" id="equation"><br><br>
+        <input type="submit" value="Solve">
+    </form>
+    {% if solution %}
+    <h2>Solution: {{ solution }}</h2>
+    {% endif %}
+</body>
+</html>
